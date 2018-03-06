@@ -10,9 +10,7 @@ app.initilize=function(pg){
 }
 app.use(express.urlencoded({extended:false}));
 app.use(logger);
-app.get('/', function(req, res) {
-    res.render('foo');
-});
 app.post('/connect',connectDb);
+app.use(express.static('public'));
 
 module.exports = app;
