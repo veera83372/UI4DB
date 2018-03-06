@@ -1,11 +1,6 @@
-let express = require('express');
-let app = express();
-
-app.set('view engine', 'ejs');
-
-app.get('/', function(req, res) {
-    res.render('foo');
-});
-
-app.listen(8080);
-console.log('8080 is the magic port');
+const http = require('http');
+const app = require('./app.js');
+const port = process.env.PORT || 8000;
+const server = http.createServer(app);
+server.listen(port);
+console.log(`listening at port no ${port}`);
