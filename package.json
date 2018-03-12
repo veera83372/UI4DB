@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "nodemon":"nodemon -i public -i test"
+    "nodemon": "nodemon -i public -i test"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "dependencies": {
     "ejs": "^2.5.7",
     "express": "^4.16.2",
-    "pg": "^7.4.1"
+    "pg": "^7.4.1",
+    "pug": "^2.0.1"
   }
 }

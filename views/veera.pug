@@ -1,0 +1,8 @@
+h1 #{user}
+ul(class='tiles')
+each val, index in tiles
+  li= val
+
+ul(class=shares)
+each val,index in shares
+  li= index + ': ' + val
