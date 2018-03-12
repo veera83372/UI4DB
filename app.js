@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended:false}));
 
 app.get('/',(req,res,next)=>{
   res.render('veera.pug',{
-    user:'veera',
+    user:process.env.USER_NAME,
     tiles:['1A','1B'],
     shares:{'Sackson':2,'Zeta':3}
   });
